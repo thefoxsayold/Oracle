@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Oracle">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="3" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="AUDSYS">
+      <ObjectId>7</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>8</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>13</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="GSMADMIN_INTERNAL">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="GSMUSER">
+      <ObjectId>22</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DIP">
+      <ObjectId>23</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="ORACLE_OCM">
+      <ObjectId>36</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="DBSNMP">
+      <ObjectId>48</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="APPQOSSYS">
+      <ObjectId>49</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="XDB">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="ANONYMOUS">
+      <ObjectId>51</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="GSMCATUSER">
+      <ObjectId>61</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="WMSYS">
+      <ObjectId>62</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="OJVMSYS">
+      <ObjectId>70</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="CTXSYS">
+      <ObjectId>73</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="ORDSYS">
+      <ObjectId>75</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="ORDDATA">
+      <ObjectId>76</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="ORDPLUGINS">
+      <ObjectId>77</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>78</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="MDSYS">
+      <ObjectId>79</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="OLAPSYS">
+      <ObjectId>82</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="MDDATA">
+      <ObjectId>85</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="SPATIAL_WFS_ADMIN_USR">
+      <ObjectId>87</ObjectId>
+    </schema>
+    <schema id="27" parent="1" name="SPATIAL_CSW_ADMIN_USR">
+      <ObjectId>90</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="LBACSYS">
+      <ObjectId>92</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="FLOWS_FILES">
+      <ObjectId>94</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>95</ObjectId>
+    </schema>
+    <schema id="31" parent="1" name="APEX_040200">
+      <ObjectId>98</ObjectId>
+    </schema>
+    <schema id="32" parent="1" name="DVF">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="33" parent="1" name="PDBADMIN">
+      <ObjectId>102</ObjectId>
+    </schema>
+    <schema id="34" parent="1" name="HR">
+      <ObjectId>103</ObjectId>
+    </schema>
+    <schema id="35" parent="1" name="OE">
+      <ObjectId>104</ObjectId>
+    </schema>
+    <schema id="36" parent="1" name="PM">
+      <ObjectId>105</ObjectId>
+    </schema>
+    <schema id="37" parent="1" name="IX">
+      <ObjectId>106</ObjectId>
+    </schema>
+    <schema id="38" parent="1" name="SH">
+      <ObjectId>107</ObjectId>
+    </schema>
+    <schema id="39" parent="1" name="BI">
+      <ObjectId>108</ObjectId>
+    </schema>
+    <schema id="40" parent="1" name="SCOTT">
+      <ObjectId>109</ObjectId>
+    </schema>
+    <schema id="41" parent="1" name="STUDY">
+      <ObjectId>110</ObjectId>
+      <IntrospectionTimestamp>2017-10-12.23:48:42</IntrospectionTimestamp>
+      <CreatedTimestamp>2017-09-24.01:57:53</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-12.08:50:32</ModifiedTimestamp>
+      <CommentsHash>7988107223863</CommentsHash>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="42" parent="1" name="DVSYS">
+      <ObjectId>1279990</ObjectId>
+    </schema>
+    <schema id="43" parent="1" name="SYSBACKUP">
+      <ObjectId>2147483617</ObjectId>
+    </schema>
+    <schema id="44" parent="1" name="SYSDG">
+      <ObjectId>2147483618</ObjectId>
+    </schema>
+    <schema id="45" parent="1" name="SYSKM">
+      <ObjectId>2147483619</ObjectId>
+    </schema>
+    <schema id="46" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <view id="47" parent="41" name="VIEW_ORDER_DETAILS">
+      <ObjectId>92787</ObjectId>
+      <CreatedTimestamp>2017-10-12.08:50:19</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-12.08:50:19</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <package id="48" parent="41" name="MYPACK">
+      <ObjectId>92866</ObjectId>
+      <CreatedTimestamp>2017-10-12.08:50:20</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-12.08:50:20</ModifiedTimestamp>
+    </package>
+    <routine id="49" parent="41" name="TEST_BLOB_FILEINS"/>
+    <routine id="50" parent="41" name="UPDATE_BLOB"/>
+    <column id="51" parent="47" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="47" name="ORDER_ID">
+      <Position>2</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="47" name="CUSTOMER_NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="47" name="CUSTOMER_TEL">
+      <Position>4</Position>
+      <DataType>VARCHAR2(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="47" name="ORDER_DATE">
+      <Position>5</Position>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="47" name="PRODUCT_ID">
+      <Position>6</Position>
+      <DataType>VARCHAR2(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="47" name="PRODUCT_NAME">
+      <Position>7</Position>
+      <DataType>VARCHAR2(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="47" name="PRODUCT_TYPE">
+      <Position>8</Position>
+      <DataType>VARCHAR2(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="47" name="PRODUCT_NUM">
+      <Position>9</Position>
+      <DataType>NUMBER(8,2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="47" name="PRODUCT_PRICE">
+      <Position>10</Position>
+      <DataType>NUMBER(8,2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <body id="61" parent="48" name="MYPACK">
+      <ObjectId>92867</ObjectId>
+      <CreatedTimestamp>2017-10-12.08:50:20</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-12.08:50:20</ModifiedTimestamp>
+    </body>
+    <routine id="62" parent="48" name="GET_SALEAMOUNT">
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="63" parent="48" name="GET_EMPLOYEES">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="64" parent="48" name="GET_EMPLOYEEBYPAGE">
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="65" parent="48" name="GET_EMPLOYEEBYPAGE_P">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="66" parent="48" name="CALC_ALL_TRADERECEIVABLE">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <argument id="67" parent="62">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="68" parent="62" name="V_DEPARTMENT_ID">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="69" parent="63" name="V_EMPLOYEE_ID">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="70" parent="64">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>REF CURSOR|0</DataType>
+    </argument>
+    <argument id="71" parent="64" name="V_PAGEIDX">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="72" parent="64" name="V_PAGESIZE">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="73" parent="65" name="V_PAGEIDX">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="74" parent="65" name="V_PAGESIZE">
+      <DataType>NUMBER|0</DataType>
+    </argument>
+    <argument id="75" parent="65" name="RC">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>REF CURSOR|0</DataType>
+    </argument>
+  </database-model>
+</dataSource>

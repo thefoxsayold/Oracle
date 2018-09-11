@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="HssProject">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <properties id="ant-postprocessing">
+      <options enabled="true" />
+    </properties>
+    <root id="archive" name="HssProject.war">
+      <element id="artifact" artifact-name="HssProject:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes" />
+      </element>
+    </root>
+  </artifact>
+</component>

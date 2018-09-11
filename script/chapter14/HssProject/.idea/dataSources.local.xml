@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Oracle" uuid="ef1742dd-eacc-40b5-a982-ad520edbe660">
+      <database-info product="Oracle" version="Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production&#10;With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>study</user-name>
+      <introspection-schemas>*:STUDY</introspection-schemas>
+      <resolve-scope>*:PUBLIC,STUDY</resolve-scope>
+      <unqualified-resolve-schemas>*:PUBLIC,STUDY</unqualified-resolve-schemas>
+    </data-source>
+    <data-source name="dataSource" uuid="74bfe72b-4efe-4a6d-ab04-d9afc3d88bc8">
+      <database-info product="Oracle" version="Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production&#10;With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <user-name>study</user-name>
+      <introspection-schemas>*:STUDY</introspection-schemas>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="63e05da3-00d0-485d-9a42-dec94c983294">
+      <database-info product="Oracle" version="Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production&#10;With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <user-name>study</user-name>
+      <introspection-schemas>*:STUDY</introspection-schemas>
+    </data-source>
+  </component>
+</project>
