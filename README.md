@@ -9,6 +9,9 @@
 
 ## 网址
 - Oracle Database 12c Release 2 下载地址
+
     http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
+
 - SQL Developer 客户端工具下载地址
+
     https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html
