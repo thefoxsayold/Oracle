@@ -8,7 +8,7 @@
 - book.pdf： 本书的PDF文档
 
 ## CDB切换到PDB过程
-S
+
 $sqlplus / as sysdba  `SYS:CDB$ROOT`
 SQL>show user `SYS`
 SQL>show con_name  `CDB$ROOT`
