@@ -7,31 +7,6 @@
 - doc目录：参考文档
 - book.pdf： 本书的PDF文档
 
-## CDB切换到PDB过程
-
-$sqlplus / as sysdba  `SYS:CDB$ROOT`
-
-SQL>show user `SYS`
-
-SQL>show con_name  `CDB$ROOT`
-
-SQL>show pdbs  `PDB$SEED, pdborcl ,…`
-
-SQL>ALTER SESSION SET CONTAINER=pdborcl;  `CDB切换到PDBORCL`
-
-SQL>show con_name  `PDBORCL`
-
-SQL>DESC all_users; `查询表的字段+属性`
-
-SQL>select username from all_users; `HR,SCOTT,SH,...`
-
-SQL>desc all_tables; `table_name,owner` 
-
-SQL>select table_name,owner from all_tables where owner=’HR’; `hr拥有的所有表名称`
-
-SQL>select * from hr.jobs; `SYS用户访问HR用户的表JOBS`
-
-
 ## 其他
 ```
 $sqlplus hr/123@localhost:1521/pdborcl:dedicated
