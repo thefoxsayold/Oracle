@@ -7,11 +7,12 @@
 - doc目录：参考文档
 - book.pdf： 本书的PDF文档
 
-## 其他
-```
-$sqlplus hr/123@localhost:1521/pdborcl:dedicated
-$lsnrctl service 连接数量在增加
-$ps –ef | grep oracleorcl 专用进程在增加
+## 实验服务器地址
+
+```flow js
+地址：202.115.82.8
+数据库：pdborcl
+system密码:123，所有密码都为123
 ```
 
 ## 网址
