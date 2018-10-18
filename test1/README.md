@@ -36,5 +36,13 @@ HAVING d.department_name in ('IT'，'Sales');
 
 ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test1/%E6%9F%A5%E8%AF%A22.png)
 
+## 两个的详细情况进行对比分析
+
+查询一详情
+
+![Image text](https://github.com/thefoxsayold/oracle/blob/master/test1/%E6%9F%A5%E8%AF%A2%E4%B8%80%E8%AF%A6%E6%83%85.png)
+
+查询二详情
+![Image text](https://github.com/thefoxsayold/oracle/blob/master/test1/%E6%9F%A5%E8%AF%A2%E4%BA%8C%E8%AF%A6%E6%83%85.png)
 
 - 设计自己的查询语句，并作相应的分析，查询语句不能太简单。
