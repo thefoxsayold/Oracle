@@ -48,7 +48,9 @@ HAVING d.department_name in ('IT'，'Sales');
 
 ##分析对比##
 **在查询语句开头加 SET AUTOTRACE ON 运行两次现实详细的情况对比两次的查询语句的消耗。**
-consistent gets:从buffer cache 中读取的undo数据的block数量，physical reads和consistent gets是我们最关心的，如果
+consistent gets:从buffer cache 中读取的undo数据的block数量，physical reads和consistent gets是我们最关心的，如果physical reads很高，说明要从磁盘请求大量的数据到buffer cache；里，通常意味着系统里存在大量的全表扫描的SQL语句，这会影响到数据库的性能。
+所以从数据上来看第一个查询语句消耗要少一点更优一些。
+
 
 
 - 设计自己的查询语句，并作相应的分析，查询语句不能太简单。
