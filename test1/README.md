@@ -46,7 +46,7 @@ HAVING d.department_name in ('IT'，'Sales');
 
 ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test1/%E6%9F%A5%E8%AF%A2%E4%BA%8C%E8%AF%A6%E6%83%85.png)
 ##分析对比
-在查询语句开头加 SET AUTOTRACE ON 运行两次现实详细的情况对比两次的查询语句的消耗。
+**在查询语句开头加 SET AUTOTRACE ON 运行两次现实详细的情况对比两次的查询语句的消耗。**
 
 
 - 设计自己的查询语句，并作相应的分析，查询语句不能太简单。
