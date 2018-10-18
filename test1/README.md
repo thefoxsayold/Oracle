@@ -20,6 +20,7 @@ GROUP BY department_name;
 
 查询一结果：
 ![Image text]
+https://github.com/thefoxsayold/oracle/blob/master/test1/%E6%9F%A5%E8%AF%A21.png
 
 
 - 查询2：
@@ -30,6 +31,9 @@ FROM hr.departments d，hr.employees e
 WHERE d.department_id = e.department_id
 GROUP BY department_name
 HAVING d.department_name in ('IT'，'Sales');
+```
+查询二结果
+![Image text]
 
 
 - 设计自己的查询语句，并作相应的分析，查询语句不能太简单。
