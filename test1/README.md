@@ -18,6 +18,10 @@ and d.department_name in ('IT'，'Sales')
 GROUP BY department_name;
 ```
 
+查询一结果：
+![Image text]
+
+
 - 查询2：
 ```SQL
 SELECT d.department_name，count(e.job_id)as "部门总人数"，
