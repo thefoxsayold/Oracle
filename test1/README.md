@@ -48,6 +48,7 @@ HAVING d.department_name in ('IT'，'Sales');
 
 ##分析对比##
 **在查询语句开头加 SET AUTOTRACE ON 运行两次现实详细的情况对比两次的查询语句的消耗。**
+consistent gets:从buffer cache 中读取的undo数据的block数量，physical reads和consistent gets是我们最关心的，如果
 
 
 - 设计自己的查询语句，并作相应的分析，查询语句不能太简单。
