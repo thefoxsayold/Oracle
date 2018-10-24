@@ -53,3 +53,26 @@
 >>>With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options<br>
 
 #### 创建表并插入数据
+>创建表student<br>
+>>CREATE TABLE student (id number,name varchar(50),sex varchar(50));<br>
+>>>表已创建。<br>
+>插入数据 “1 zhang male”、 “2 liu female”、“3 wang male”<br>
+>>SQL> INSERT INTO student(id,name,sex)VALUES(1,'zhang','male');<br>
+>>>已创建 1 行。<br>
+>>SQL> INSERT INTO student(id,name,sex)VALUES(2,'liu','female');<br>
+>>>已创建 1 行。<br>
+>>SQL> INSERT INTO student(id,name,sex)VALUES(2,'wang','male');
+>>>已创建 1 行。<br>
+
+#### 创建视图并查询
+>创建视图<br>
+>>  CREATE VIEW studentview AS SELECT name FROM student;<br>
+>>> 视图已创建<br>
+>查询视图<br>
+>>SELECT * FROM myview;<br>
+>>>NAME<br>
+>>>--------------------------------------------------------------------------------<br>
+>>>zhang<br>
+>>>liu<br>
+>>>wang<br>
+
