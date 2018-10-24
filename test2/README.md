@@ -76,3 +76,47 @@
 >>>liu<br>
 >>>wang<br>
 
+### 查看数据库的使用情况
+#### SQL> show user;
+>USER 为 "SYSTEM"<br>
+
+>SELECT tablespace_name,FILE_NAME,BYTES/1024/1024 MB,MAXBYTES/1024/1024 MAX_MB,autoextensible FROM dba_data_files  WHERE  >tablespace_name='USERS';
+
+>>TABLESPACE_NAME
+>>--------------------------------------------------------------------------------
+>>FILE_NAME
+>>--------------------------------------------------------------------------------
+>>        MB     MAX_MB AUTOEXTEN
+>>---------- ---------- ---------
+>>USERS
+>>/home/oracle/app/oracle/oradata/orcl/pdborcl/SAMPLE_SCHEMA_users01.dbf
+>>        5 32767.9844 YES
+         
+>SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB", <br>
+>free/1024/1024 "剩余MB",( total - free )/1024/1024 "使用MB", <br>
+> Round(( total - free )/ total,4)* 100 "使用率%" <br>
+> from (SELECT tablespace_name,Sum(bytes)free <br>
+>        FROM   dba_free_space group  BY tablespace_name)a, <br>
+>       (SELECT tablespace_name,Sum(bytes)total FROM dba_data_files <br>
+>        group  BY tablespace_name)b <br>
+> where  a.tablespace_name = b.tablespace_name; <br>
+>> 表空间名  <br>
+>>--------------------------------------------------------------------------------  <br>
+>>    大小MB     剩余MB     使用MB    使用率%  <br>
+>>---------- ---------- ---------- ----------  <br>
+>>SYSAUX  <br>
+>>       630      35.75     594.25      94.33  <br>
+>>  <br>
+>>USERS  <br>
+>>         5        .25       4.75         95  <br>
+>>  <br>
+>>SYSTEM  <br>
+>>       270     3.5625   266.4375      98.68  <br>
+>>  <br>
+>>表空间名  <br>
+>>--------------------------------------------------------------------------------  <br>
+>>   大小MB     剩余MB     使用MB    使用率%  <br>
+>>---------- ---------- ---------- ----------  <br>
+>>EXAMPLE  <br>
+>>  1281.875      62.25   1219.625      95.14  <br>
+
