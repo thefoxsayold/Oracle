@@ -11,6 +11,7 @@
 
 ### 本实验使用3个表空间：USERS,USERS02,USERS03。在表空间中创建两张表：订单表(orders)与订单详表(order_details)。
 ### - 使用**你自己的账号创建本实验的表**，表创建在上述3个分区，自定义分区策略。
+```
 SQL> CREATE TABLE orders    <font color='red'>创建orders表 </font>                                         <br>
 (                                       <br>
  order_id NUMBER(10, 0) NOT NULL                                        <br>
@@ -138,5 +139,5 @@ PCTFREE 10                                        <br>
  BUFFER_POOL DEFAULT                                        <br>
 )                                        <br>
 );                                       <br>
-
+```
 ###
