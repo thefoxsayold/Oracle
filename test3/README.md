@@ -148,6 +148,72 @@ PCTFREE 10
 ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test3/QQ%E6%88%AA%E5%9B%BE20181031210107.png)
 
 ### 表创建成功后，插入数据，数据能并平均分布到各个分区。每个表的数据都应该大于1万行，对表进行联合查询。
+#### 插入orders
+``` 
+declare
+i integer; 
+begin
+    i := 1;
+    loop
+        if i<=3000
+        then
+            insert into NEW_ZB.ORDERS (order_id, customer_name, customer_tel, order_date, employee_id, discount, trade_receivable)
+            values(i,'zzc','zzc',to_date('2015-02-14','yyyy-mm-dd'),i,i,i);
+        
+        elsif i<=5000
+        then
+            insert into NEW_ZB.ORDERS (order_id, customer_name, customer_tel, order_date, employee_id, discount, trade_receivable)
+                values(i,'zzc','zzc',to_date('2016-02-14','yyyy-mm-dd'),i,i,i);
+        
+        elsif i<=7000
+        then
+            insert into NEW_ZB.ORDERS (order_id, customer_name, customer_tel, order_date, employee_id, discount, trade_receivable)
+                values(i,'zzc','zzc',to_date('2016-02-14','yyyy-mm-dd'),i,i,i);
+        
+        else 
+            insert into NEW_ZB.ORDERS (order_id, customer_name, customer_tel, order_date, employee_id, discount, trade_receivable)
+                values(i,'zzc','zzc',to_date('2017-1-1','yyyy-mm-dd'),i,i,i);
+        end if;
+        i := i + 1;
+        /* 停止条件 */
+        exit when i > 12000;
+    end loop;
+    commit;
+end;
+```
+#### 插入 order_detalis
+```
+declare
+i integer; 
+begin
+    i := 1;
+    loop
+        if i<=3000
+        then
+            insert into NEW_ZB.ORDER_DETAILS (ID, ORDER_ID, PRODUCT_ID, PRODUCT_NUM, PRODUCT_PRICE)
+            values(i,i,'zzb',500,50);
+        
+        elsif i<=5000
+        then
+            insert into NEW_ZB.ORDER_DETAILS (ID, ORDER_ID, PRODUCT_ID, PRODUCT_NUM, PRODUCT_PRICE)
+            values(i,i,'zzb',400,70);
+        
+        elsif i<=7000
+        then
+            insert into NEW_ZB.ORDER_DETAILS (ID, ORDER_ID, PRODUCT_ID, PRODUCT_NUM, PRODUCT_PRICE)
+            values(i,i,'zzb',300,10);
+        
+        else 
+             insert into NEW_ZB.ORDER_DETAILS (ID, ORDER_ID, PRODUCT_ID, PRODUCT_NUM, PRODUCT_PRICE)
+            values(i,i,'zzb',800,200);
+        end if;
+        i := i + 1;
+        /* 停止条件 */
+        exit when i > 12000;
+    end loop;
+    commit;
+end;
+```
 
 ### 写出插入数据的语句和查询数据的语句，并分析语句的执行计划。
 
