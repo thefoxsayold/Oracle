@@ -227,3 +227,7 @@ and e.ORDER_DATE> to_date('2016-12-07 08:00:00','yyyy-mm-dd hh24:mi:ss');
 
 ### 进行分区与不分区的对比实验。
 
+![Image text](https://github.com/thefoxsayold/oracle/blob/master/test3/%E6%8D%95%E8%8E%B7.PNG)
+
+分区后查找效率更高
+
