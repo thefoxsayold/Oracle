@@ -217,4 +217,13 @@ end;
 
 ### 写出插入数据的语句和查询数据的语句，并分析语句的执行计划。
 
+```
+select e.ORDER_ID,e.CUSTOMER_NAME,e.ORDER_DATE,d.PRODUCT_ID,d.PRODUCT_NUM,d.PRODUCT_PRICE
+from ORDERS e,ORDER_DETAILS d
+where  e.ORDER_ID=d.ORDER_ID
+and e.ORDER_DATE> to_date('2016-12-07 08:00:00','yyyy-mm-dd hh24:mi:ss');
+
+```
+
 ### 进行分区与不分区的对比实验。
+
