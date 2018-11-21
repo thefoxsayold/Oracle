@@ -20,14 +20,14 @@
     ```
     SELECT * FROM employees START WITH EMPLOYEE_ID = 11 CONNECT BY PRIOR EMPLOYEE_ID = MANAGER_ID;
     ```
-    ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test4/1.png)
+   ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test4/1.png)
     2.递归查询某个员工及其所有下属，子下属员工。
     ```
     SELECT * FROM employees START WITH EMPLOYEE_ID = 11
     CONNECT BY PRIOR EMPLOYEE_ID = MANAGER_ID;
     ```
     ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test4/2.png)
-    3.查询订单表，并且包括订单的订单应收货款: Trade_Receivable= sum(订单详单表.ProductNum*订单详单表.ProductPrice)- Discount。]
+    3.查询订单表，并且包括订单的订单应收货款: Trade_Receivable= sum(订单详单表.ProductNum*订单详单表.ProductPrice)- Discount。
     ```
     SELECT * FROM orders where order_id=8566;
     SELECT * FROM order_details where order_id=8566;
