@@ -1,4 +1,5 @@
 #用户名:      thefoxsayold
+#oracle用户名：new_zb
 
 
 # Oracle 数据库应用
