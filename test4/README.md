@@ -20,23 +20,26 @@
     ```
     SELECT * FROM employees START WITH EMPLOYEE_ID = 11 CONNECT BY PRIOR EMPLOYEE_ID = MANAGER_ID;
     ```
-    
+    ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test4/1.png)
     2.递归查询某个员工及其所有下属，子下属员工。
     ```
     SELECT * FROM employees START WITH EMPLOYEE_ID = 11
     CONNECT BY PRIOR EMPLOYEE_ID = MANAGER_ID;
     ```
+    ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test4/2.png)
     3.查询订单表，并且包括订单的订单应收货款: Trade_Receivable= sum(订单详单表.ProductNum*订单详单表.ProductPrice)- Discount。]
     ```
     SELECT * FROM orders where order_id=8566;
     SELECT * FROM order_details where order_id=8566;
     ```
+    ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test4/3.png)
     4.查询订单详表，要求显示订单的客户名称和客户电话，产品类型用汉字描述。
     ```
     SELECT CUSTOMER_NAME as 客户名称,CUSTOMER_TEL as 客户电话,PRODUCT_NAME as 产品类型 
     FROM order_details,orders 
     WHERE order_details.order_id=orders.order_id And orders.order_id=8566; 
     ```
+    ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test4/4.png)
     5.查询出所有空订单，即没有订单详单的订单。
     ```
     SELECT * FROM orders WHERE order_id NOT IN (SELECT order_id FROM order_details);
@@ -47,6 +50,7 @@
     FROM departments,employees 
     WHERE employees.manager_id = departments.department_id;
     ```
+    ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test4/6.png)
     7.查询部门表，统计每个部门的销售总金额。
     ```
     SELECT departments.department_name as 部门名称,SUM(ORDERS.trade_receivable) as 总金额 
@@ -54,6 +58,7 @@
     WHERE departments.department_id=employees.department_id AND employees.employee_id=orders.employee_id 
     group by departments.department_name;
     ```
+    ![Image text](https://github.com/thefoxsayold/oracle/blob/master/test4/7.png)
 
 ## 表结构
 
