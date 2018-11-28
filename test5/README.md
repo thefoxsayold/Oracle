@@ -40,9 +40,9 @@ FUNCTION Get_SaleAmount(V_DEPARTMENT_ID NUMBER) RETURN NUMBER
     在包体重写具体的函数     
     ```
      PROCEDURE GET_EMPLOYEES(V_EMPLOYEE_ID NUMBER)
-  AS
-    LEFTSPACE VARCHAR(2000);
-    begin
+     AS
+         LEFTSPACE VARCHAR(2000);
+            begin
       --通过LEVEL判断递归的级别
       LEFTSPACE:=' ';
       --使用游标
@@ -54,7 +54,7 @@ FUNCTION Get_SaleAmount(V_DEPARTMENT_ID NUMBER) RETURN NUMBER
         DBMS_OUTPUT.PUT_LINE(LPAD(LEFTSPACE,(V.LEVEL-1)*4,' ')||
                              V.EMPLOYEE_ID||' '||v.NAME);
       END LOOP;
-    END;
+      END;
     ```
 
 
